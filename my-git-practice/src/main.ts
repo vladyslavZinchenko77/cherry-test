@@ -3,6 +3,7 @@ import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.ts';
 import { reverseString } from './reverseString.ts';
+import { removeDuplicates } from './removeDuplicates.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -23,4 +24,5 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `;
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
-reverseString('Hello');
+console.log(reverseString('Hello'));
+console.log(removeDuplicates([1, 2, 2, 3])); // [1, 2, 3]
